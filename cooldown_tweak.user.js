@@ -13,7 +13,7 @@
 // ==/UserScript==
 
 function wrapper(plugin_info) {
-    iit
+
     // ensure plugin framework is there, even if iitc is not yet loaded
     if (typeof window.plugin !== 'function') window.plugin = function () { };
 
@@ -25,7 +25,7 @@ function wrapper(plugin_info) {
 
         let source = window.getPortalHackDetails.toString();
         source = source.replace("function(d)", "(d)=>");
-        const codeOld = /var\s+cooldownTime\s*=\s*.*?;/; // example: "var cooldownTime = xxxx;"
+        const codeOld = /var\s+cooldownTime\s*=.*?;/; // example: "var cooldownTime = xxxx;"
         const codeNew = "var cooldownTime = PLAYER.team.startsWith(d.team) ? HACK_COOLDOWN_FRIENDLY : HACK_COOLDOWN_ENEMY;";
         source = source.replace(codeOld, codeNew);
         window.getPortalHackDetails = eval(source);
