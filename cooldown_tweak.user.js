@@ -2,10 +2,12 @@
 // @author         McBen
 // @name           IITC plugin: Cooldown Tweak
 // @category       Info
-// @version        2.0.0_221005
+// @version        2.0.0.221005
 // @description    Apply current hack cooldown times (01.10.22)
 // @id             cooldown_tweak
 // @namespace      https://github.com/IITC-CE/ingress-intel-total-conversion
+// @updateURL      https://github.com/IITCPlugins/cooldown_tweak/raw/main/cooldown_tweak.user.js
+// @downloadURL    https://github.com/IITCPlugins/cooldown_tweak/raw/main/cooldown_tweak.user.js
 // @match          https://intel.ingress.com/*
 // @grant          none
 // ==/UserScript==
